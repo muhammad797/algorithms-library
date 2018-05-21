@@ -19,7 +19,6 @@ export default class App extends React.Component {
 const AlgorithmsLibrary = createStackNavigator({
     Splash: Splash,
     AlgorithmsList: AlgorithmsList,
-    Algorithm: Algorithm,
 }, {
     headerMode: "none",
 });

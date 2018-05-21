@@ -12,11 +12,14 @@ class AlgorithmsList extends React.Component {
         );
     }
 
+    keyExtractor = (item, index) => item.id;
+
     render() {
         return (
             <View style={styles.container}>
                 <FlatList data={this.props.algorithms}
                           renderItem={this.renderListItem.bind(this)}
+                          keyExtractor={this.keyExtractor}
                 />
             </View>
         );
